@@ -1,5 +1,4 @@
 import pandas as pd
-import matplotlib.pyplot as plt
 
 desired_width = 320
 pd.set_option('display.width', desired_width)

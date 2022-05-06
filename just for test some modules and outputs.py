@@ -1,12 +1,15 @@
 import pandas as pd
 import re
-import matplotlib as plt
 
 
 desired_width = 320
 pd.set_option('display.width', desired_width)
 pd.set_option('display.max_columns', 10)
 
+
+
+s = '26970.0'
+print(int(s))
 
 # text = '.....'
 # print(text.split('.'))
@@ -60,8 +63,8 @@ pd.set_option('display.max_columns', 10)
 # print(len(number_of_sentences))
 #
 
-df = pd.read_csv('2.feature extraction from dataframes/21.NDD.22.NExR.csv')
-print(df.tail(20))
+# df = pd.read_csv('kg_codes_clean.csv')
+# print(df[df['project_ID'] == 314247])
 
 # columns = df.columns
 #

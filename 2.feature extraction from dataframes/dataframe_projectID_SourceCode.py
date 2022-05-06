@@ -13,8 +13,6 @@ df = df[df['source'].notna()]
 print(df.shape)
 
 df = df.groupby(['project_ID'])['source'].apply('\n'.join).reset_index()
+df[['project_ID', 'source']].to_csv('ProjectID_SourceCode.csv', index=False)
 
-df['LOC'] = df['source'].apply(lambda x: x.count('\n') + 1)
-print(df.shape)
-df[['project_ID', 'LOC']].to_csv('Features/1.LOC.csv', index=False)
-# print(df.head(30))
+print(df.tail(3000).head(20))
